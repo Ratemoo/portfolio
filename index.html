@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brian Ratemo is a software engineer and full-stack developer focused on Java, Python, AI/ML, backend systems, and production-ready software.">
+  <meta name="theme-color" content="#12070b">
+  <title>Portfolio</title>
+  <link rel="icon" href="assets/brand-logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Orbitron:wght@500;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="matrix-canvas" aria-hidden="true"></canvas>
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <div class="terminal terminal-hidden" id="terminal" aria-hidden="true">
+    <div class="terminal__header">
+      <div class="terminal__dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <span class="terminal__title" id="terminal-title">portfolio@terminal</span>
+      <button class="terminal__close" id="terminal-close" type="button" aria-label="Close terminal">x</button>
+    </div>
+    <div class="terminal__body" id="terminal-body"></div>
+    <label class="terminal__input-row" for="terminal-input">
+      <span class="terminal__prompt" id="terminal-prompt">guest@portfolio:~$</span>
+      <input id="terminal-input" class="terminal__input" type="text" autocomplete="off" spellcheck="false" placeholder="Type help">
+    </label>
+  </div>
+
+  <header id="header" class="hero">
+    <nav class="nav">
+      <a class="brand" href="#header">
+        <img id="brand-mark" class="brand__mark" src="assets/logo-mark.svg" alt="Portfolio logo">
+        <span id="brand-name" class="brand__name">Portfolio</span>
+      </a>
+
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div id="nav-links" class="nav__links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Work</a>
+        <a href="#timeline">Journey</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav__actions">
+        <button id="terminal-toggle" class="terminal-toggle" type="button">
+          <span class="terminal-toggle__icon">&gt;_</span>
+          <span>Terminal</span>
+        </button>
+        <a class="button button--primary button--nav" href="#contact">Hire Me</a>
+      </div>
+    </nav>
+
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <p id="hero-edition" class="hero__edition"></p>
+        <p class="hero__typing">
+          <span class="hero__prompt">$</span>
+          <span id="typing-line"></span>
+          <span class="hero__cursor">|</span>
+        </p>
+        <p id="hero-role" class="hero__eyebrow"></p>
+        <h1 class="hero__title">
+          <span id="hero-name"></span><br>
+          <span id="hero-tagline" class="hero__tagline"></span>
+        </h1>
+        <p id="hero-summary" class="hero__summary"></p>
+
+        <div class="hero__chips">
+          <span id="hero-base" class="hero__chip"></span>
+          <span id="hero-availability" class="hero__chip hero__chip--accent"></span>
+        </div>
+
+        <div class="hero__actions">
+          <a class="button button--primary" href="#portfolio">View Work</a>
+          <a class="button button--ghost" href="#contact">Get In Touch</a>
+        </div>
+
+        <div id="hero-stats" class="hero__stats"></div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="portrait-card">
+          <div class="portrait-card__glow"></div>
+          <img id="hero-image" class="portrait-card__image" src="assets/avatar-placeholder.svg" alt="Portfolio portrait">
+        </div>
+        <div class="signal-card">
+          <p class="signal-card__label">Current Focus</p>
+          <p id="focus-line" class="signal-card__value"></p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section section--muted">
+      <div class="container about">
+        <div class="about__media">
+          <img id="about-image" src="assets/avatar-placeholder.svg" alt="About portrait">
+        </div>
+        <div class="about__content">
+          <p class="section__number">01 - About</p>
+          <p class="section__kicker">Engineer And Storyteller</p>
+          <h2 class="section__title section__title--display">A portfolio with more soul and more structure.</h2>
+          <p id="about-intro" class="section__text"></p>
+          <p id="about-bio" class="section__text"></p>
+          <p id="about-quote" class="about__quote"></p>
+
+          <div id="about-highlights" class="about__highlights"></div>
+
+          <div class="tabs">
+            <div id="about-tabs" class="tabs__buttons" role="tablist" aria-label="About tabs"></div>
+            <div id="about-panels" class="tabs__panels"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section__row">
+          <div>
+            <p class="section__number">02 - Toolbox</p>
+            <p class="section__kicker">The Craft</p>
+            <h2 class="section__title section__title--display">Tools matter, but taste matters too.</h2>
+          </div>
+          <p id="skills-intro" class="section__text section__text--narrow"></p>
+        </div>
+
+        <div class="skills-marquee">
+          <div id="skills-track" class="skills-marquee__track"></div>
+        </div>
+
+        <div id="craft-grid" class="craft-grid"></div>
+      </div>
+    </section>
+
+    <section id="services" class="section section--muted">
+      <div class="container">
+        <p class="section__number">03 - Focus Areas</p>
+        <p class="section__kicker">What I Build</p>
+        <h2 class="section__title section__title--display">Engineering depth, product thinking, and practical execution.</h2>
+        <div id="services-grid" class="card-grid card-grid--services"></div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section">
+      <div class="container">
+        <div class="section__row">
+          <div>
+            <p class="section__number">04 - Work</p>
+            <p class="section__kicker">Recent Projects</p>
+            <h2 class="section__title section__title--display">A cleaner story around the work itself.</h2>
+          </div>
+          <p id="work-note" class="section__text section__text--narrow"></p>
+        </div>
+        <div id="projects-grid" class="projects-grid"></div>
+      </div>
+    </section>
+
+    <section id="timeline" class="section section--muted">
+      <div class="container">
+        <div class="section__row">
+          <div>
+            <p class="section__number">05 - Journey</p>
+            <p class="section__kicker">Education And Path</p>
+            <h2 class="section__title section__title--display">How the practice has been taking shape.</h2>
+          </div>
+          <p id="journey-note" class="section__text section__text--narrow"></p>
+        </div>
+        <div id="timeline-list" class="timeline"></div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="section__row">
+          <div>
+            <p class="section__number">06 - Gallery</p>
+            <p class="section__kicker">Behind The Work</p>
+            <h2 class="section__title section__title--display">A space for mood, process, and visual context.</h2>
+          </div>
+          <p id="gallery-note" class="section__text section__text--narrow"></p>
+        </div>
+        <div id="gallery-grid" class="gallery-grid"></div>
+      </div>
+    </section>
+
+    <section id="faq" class="section section--muted">
+      <div class="container faq">
+        <div class="faq__intro">
+          <p class="section__number">07 - Quick Answers</p>
+          <p class="section__kicker">Common Questions</p>
+          <h2 class="section__title section__title--display">The short version before we talk specifics.</h2>
+          <p id="faq-note" class="section__text"></p>
+          <a class="button button--ghost faq__jump" href="#contact">Go To Contact</a>
+        </div>
+        <div id="faq-list" class="faq-list"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--muted">
+      <div class="container contact">
+        <div class="contact__info">
+          <p class="section__number">08 - Contact</p>
+          <p class="section__kicker">Open To Opportunities</p>
+          <h2 class="section__title section__title--display">Let's talk about software engineering, backend systems, and product work.</h2>
+          <p id="contact-note" class="section__text"></p>
+          <div id="contact-list" class="contact__list"></div>
+          <div id="social-links" class="social-links"></div>
+        </div>
+
+        <form id="contact-form" class="contact-form">
+          <label>
+            <span>Name</span>
+            <input id="form-name" name="name" type="text" placeholder="Your name">
+          </label>
+          <label>
+            <span>Email</span>
+            <input id="form-email" name="email" type="email" placeholder="you@example.com">
+          </label>
+          <label>
+            <span>Project Type</span>
+            <input id="form-service" name="service" type="text" placeholder="Portfolio, business site, redesign">
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea id="form-message" name="message" rows="5" placeholder="Tell me what you want to build"></textarea>
+          </label>
+          <button class="button button--primary" type="submit">Send Message</button>
+          <!-- <p class="contact-form__note">This demo form opens your email app with the message filled in.</p> -->
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p><span id="footer-name">Your Name</span> <span id="footer-year"></span></p>
+    </div>
+  </footer>
+
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

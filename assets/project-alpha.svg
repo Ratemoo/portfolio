@@ -1,0 +1,22 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" rx="48" fill="#07140D"/>
+  <rect x="24" y="24" width="1552" height="952" rx="28" stroke="url(#paint0_linear)" stroke-width="4"/>
+  <rect x="96" y="96" width="1408" height="100" rx="24" fill="#0D2218"/>
+  <rect x="136" y="128" width="260" height="36" rx="18" fill="#59FF62" fill-opacity="0.22"/>
+  <rect x="96" y="248" width="520" height="560" rx="28" fill="#0C1E15"/>
+  <rect x="660" y="248" width="844" height="250" rx="28" fill="#0C1E15"/>
+  <rect x="660" y="530" width="404" height="278" rx="28" fill="#0C1E15"/>
+  <rect x="1100" y="530" width="404" height="278" rx="28" fill="#0C1E15"/>
+  <text x="156" y="330" fill="#32D9FF" font-family="Arial, sans-serif" font-size="42" font-weight="700">PROJECT PREVIEW</text>
+  <text x="156" y="402" fill="#F3FFF4" font-family="Arial, sans-serif" font-size="78" font-weight="700">Creator Portfolio</text>
+  <text x="156" y="472" fill="#9CC5A5" font-family="Arial, sans-serif" font-size="30">Replace this file with a real project screenshot.</text>
+  <rect x="156" y="560" width="240" height="54" rx="27" fill="#59FF62"/>
+  <rect x="156" y="644" width="200" height="24" rx="12" fill="#32D9FF" fill-opacity="0.4"/>
+  <rect x="156" y="688" width="330" height="24" rx="12" fill="#32D9FF" fill-opacity="0.24"/>
+  <defs>
+    <linearGradient id="paint0_linear" x1="120" y1="90" x2="1480" y2="910" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#59FF62"/>
+      <stop offset="1" stop-color="#32D9FF"/>
+    </linearGradient>
+  </defs>
+</svg>
