@@ -157,14 +157,14 @@ window.portfolioContent = {
     {
       period: "01 / 2026",
       meta: "HTML | JavaScript | Interactive Frontend",
-      title: "Hbirthday",
-      text: "An interactive birthday website built to wish someone special a happy birthday. It combines custom styling, playful presentation, music playback and JavaScript interactions to turn a simple message into a more memorable experience.",
-      image: "assets/project-hbirthday.png",
-      tags: ["HTML", "JavaScript", "Creative Build"],
-      primaryLabel: "Live Project",
-      primaryLink: "https://hbirthday-five.vercel.app",
+      title: "Quint Essentials",
+      text: "A thrift commerce project being built for a user who wants to sell bags and shoes online. It combines custom styling, luxurious design and Python concepts to turn into a simple e-commerce site to a prestigious site. ",
+      image: "assets/Quint.png",
+      tags: ["Python", "Client Work", "E-commerce"],
+      primaryLabel: "Pending Deployment",
+      primaryLink: "https://github.com/Ratemoo/quint",
       secondaryLabel: "View Repository",
-      secondaryLink: "https://github.com/Ratemoo/Hbirthday"
+      secondaryLink: "https://github.com/Ratemoo/quint"
     },
     {
       period: "02 / 2026",
