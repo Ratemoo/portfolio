@@ -168,7 +168,7 @@ window.portfolioContent = {
     },
     {
       period: "02 / 2026",
-      meta: "Python | Client Project | In Progress",
+      meta: "Python | Client Project | Completed",
       title: "Shiro Thrift",
       text: "A thrift commerce project being built for a client who wants to sell thrift clothes online. It combines custom styling, luxurious design and Python concepts to turn a simple e-commerce site to a prestigious site. ",
       image: "assets/Shiro.png",
