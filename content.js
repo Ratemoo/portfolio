@@ -161,8 +161,8 @@ window.portfolioContent = {
       text: "A thrift commerce project being built for a user who wants to sell bags and shoes online. It combines custom styling, luxurious design and Python concepts to turn into a simple e-commerce site to a prestigious site. ",
       image: "assets/Quint.png",
       tags: ["Python", "Client Work", "E-commerce"],
-      primaryLabel: "Pending Deployment",
-      primaryLink: "https://github.com/Ratemoo/quint",
+      primaryLabel: "Live Project",
+      primaryLink: "https://quint-96g0.onrender.com",
       secondaryLabel: "View Repository",
       secondaryLink: "https://github.com/Ratemoo/quint"
     },
